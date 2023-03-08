@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Welcome to my website</h1>
+<p>Click next.</p>
+
+<button onclick="myFunction()">Next</button>
+
+<p id="mywebsite"></p>
+<input type ="button" value="Click here" onclick="newDoc()">
+
+<script>
+function myFunction(){
+    let text;
+    let person = prompt("Please enter your name:", "Hue (Lily) Nguyen");
+    if(person == null || person == ""){
+        text = "It is not a name. Please enter your name.";
+    } else{
+        text = "Hello " + person + ", nice to meet you! Please click here."
+    }
+    document.getElementById("mywebsite").innerHTML = text;
+}
+
+function newDoc(){
+    window.location.assign("file:///Users/nguyenhue/Desktop/My%20first%20web1.html")
+}
+</script>
+
+</body>
+</html>
